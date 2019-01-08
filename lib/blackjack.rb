@@ -60,12 +60,12 @@ def runner
     hit?(cards)
     display_card_total(cards)
     break if cards > 21
-    
+
     if cards > 21
       end_game(cards)
     end
     return
   end
 
-  
+
 end
