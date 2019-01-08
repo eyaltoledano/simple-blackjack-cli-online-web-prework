@@ -34,11 +34,11 @@ def hit?(number)
   prompt_user # Type h or s
   answer = get_user_input # get the input and store it into 'answer'
   if answer == 'h'
-    total = total + deal_card
+    number = number + deal_card
   else answer == 's'
-    total
+    number
   end
-  total
+  number
 end
 
 def invalid_command
