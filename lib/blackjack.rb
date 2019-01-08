@@ -56,8 +56,8 @@ def runner
   until cards > 21
     new_card_value = hit?(cards)
     display_card_total(new_card_value)
-    return
     break if cards > 21
+    return
   end
   end_game(new_card_value)
 end
