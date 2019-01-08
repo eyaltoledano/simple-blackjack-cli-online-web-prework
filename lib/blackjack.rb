@@ -30,15 +30,15 @@ def initial_round
   cards
 end
 
-def hit?(number)
+def hit?(current_total)
   prompt_user # Type h or s
   answer = get_user_input # get the input and store it into 'answer'
   if answer == 'h'
-    number = number + deal_card
+    current_total = current_total + deal_card
   else answer == 's'
-    number
+    current_total
   end
-  number
+  current_total
 end
 
 def invalid_command
